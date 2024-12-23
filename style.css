@@ -1,0 +1,64 @@
+.body {
+    background-color: rgb(23, 23, 23);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    margin-top: 130px;
+    color: aliceblue;
+    font-family: poppins;
+    font-size: 50px;
+}
+/* Centered whiteboard style */
+.main {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Ensures .main div has a contrasting background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Canvas style */
+.canvas {
+    border: 2px solid black;
+    height: 500px;
+    width: 800px;
+}
+
+/* Top and bottom control sections */
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 20px;
+}
+#fontPicker{
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Control block styling */
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block, input, select, button {
+    width: 200px;
+    margin: 20px;
+}
